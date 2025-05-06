@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Events and basic interactivity</title>
+</head>
+<body>
+    <button id="myButton">Click me</button> 
+    <div id="hover">Hover me</div>
+    <div id="output">Press any key...</div>
+
+    <button id="magicBtn">Click Me!</button>
+
+    <div id="gallery">
+        <img src="photo1.jpg" class="active">
+        <img src="photo2.jpg">
+        <img src="photo3.jpg">
+    </div>
+
+    <div class="tab-buttons">
+        <button data-tab="1">Tab 1</button>
+        <button data-tab="2">Tab 2</button>
+        <button data-tab="3">Tab 3</button>
+    </div>
+
+    <div id="tab-1" class="tab-content active">Welcome to Tab 1!</div>
+    <div id="tab-2" class="tab-content">Hello from Tab 2!</div>
+    <div id="tab-3" class="tab-content">Greetings from Tab 3!</div>
+
+   <h2>Sign Up</h2>
+       <form id="signupForm" novalidate>
+           <input type="text" id="name" placeholder="Name" required>
+           <div id="nameError" class="error"></div>
+
+           <input type="email" id="email" placeholder="Email" required>
+           <div id="emailError" class="error"></div>
+
+           <input type="password" id="password" placeholder="Password (min 8 characters)" required>
+           <div id="passwordError" class="error"></div>
+
+           <button type="submit" id="submitBtn" disabled>Submit</button>
+        </form>
+
+        <div id="successMessage" class="success"></div>
+
+ 
+<script src="script.js"></script>
+</body>
+</html>

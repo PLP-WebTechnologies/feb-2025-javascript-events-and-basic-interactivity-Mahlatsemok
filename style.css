@@ -1,0 +1,145 @@
+#myButton {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 20px 25px; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    font-size: 18px; 
+    display: block;
+    margin: 0 auto;
+}
+
+#hover {
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 150px;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+    user-select: none;
+}
+
+#hover:hover {
+    background-color: coral;
+    cursor: pointer;
+}
+
+#output {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#magicBtn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#magicBtn.clicked {
+    background-color: #f44336;
+}
+
+#gallery {
+    margin: 20px auto;
+    width: 300px;
+    height: 200px;
+    position: relative;
+}
+
+#gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    border-radius: 12px;
+}
+
+#gallery img.active {
+    display: block;
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.tab-buttons {
+    margin-top: 30px;
+}
+
+.tab-buttons button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.tab-content {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    animation: slideIn 0.4s ease-out;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.success {
+    color: green;
+    font-size: 16px;
+}
+
+.valid {
+    border: 2px solid green;
+}
+
+.invalid {
+    border: 2px solid red;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
